@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="slider.js" defer></script>
+</head>
+<body>
+
+    <h1>Image Slider</h1>
+
+    <div class="slider">
+
+        <!-- previous arrow -->
+        <button class="slider-btn prev" id="prevBtn" aria-label="Previous slide">&#10094;</button>
+
+        <!-- viewport clips everything outside -->
+        <div class="slider-viewport">
+            <div class="slider-track" id="track">
+
+                <div class="slide">
+                    <img src="https://picsum.photos/id/1015/800/500" alt="Mountain lake view">
+                </div>
+
+                <div class="slide">
+                    <img src="https://picsum.photos/id/1016/800/500" alt="Forest valley">
+                </div>
+
+                <div class="slide">
+                    <img src="https://picsum.photos/id/1018/800/500" alt="Rocky mountains">
+                </div>
+
+                <div class="slide">
+                    <img src="https://picsum.photos/id/1019/800/500" alt="River and trees">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- next arrow -->
+        <button class="slider-btn next" id="nextBtn" aria-label="Next slide">&#10095;</button>
+
+        <!-- dots container - filled by JS -->
+        <div class="slider-dots" id="dots"></div>
+
+    </div>
+
+</body>
+</html>
